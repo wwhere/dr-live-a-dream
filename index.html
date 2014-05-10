@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es" ng-app="liveADreamApp">
+<head>
+    <meta charset="utf-8">
+    <title>Dreamraiders - Live a Dream</title>
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/service/franjasDeEdad.js"></script>
+    <script src="js/model/FranjaDeEdad.js"></script>
+    <script src="js/model/Personaje.js"></script>
+    <script src="js/controller/controllers.js"></script>
+</head>
+<body>
+    <div ng-controller="PersonajeCtrl">
+        <label>Nombre:</label>
+        <input type="text" ng-model="nombre" placeholder="nombre">
+
+        <label>Edad:</label>
+        <input type="number" ng-model="edad" placeholder="edad">
+
+        <label>Puntos de Característica:</label>
+        <span>{{puntosCaracteristica}}</span>
+
+        <label>Puntos de Onírica:</label>
+        <span>{{puntosOnirica}}</span>
+
+        <label>Polaroids:</label>
+        <span>{{polaroids}}</span>
+
+    </div>
+    <hr>
+    <div ng-controller="FranjaDeEdadCtrl">
+        <span>Franjas de edad (nombre - puntos de característica - polaroids - puntos de onírica)</span>
+        <ul class="unstyled">
+            <li ng-repeat="franjaDeEdad in franjasDeEdad">
+                <span>{{franjaDeEdad.nombre}} - {{franjaDeEdad.puntosCaracteristica}} - {{franjaDeEdad.polaroids}} - {{franjaDeEdad.puntosOnirica}}</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

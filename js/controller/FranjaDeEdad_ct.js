@@ -1,0 +1,51 @@
+function FranjaDeEdadCtrl($scope) {
+    $scope.franjasDeEdad = [
+        {
+            nombre: 'niño',
+            edadMinima: 8,
+            edadMaxima: 14,
+            puntosCaracteristica: 8,
+            polaroids: 2,
+            puntosOnirica: 5
+        },
+        {
+            nombre: 'adolescente',
+            edadMinima: 15,
+            edadMaxima: 19,
+            puntosCaracteristica: 10,
+            polaroids: 3,
+            puntosOnirica: 3
+        },
+        {
+            nombre: 'joven',
+            edadMinima: 20,
+            edadMaxima: 35,
+            puntosCaracteristica: 11,
+            polaroids: 4,
+            puntosOnirica: 2
+        },
+        {
+            nombre: 'adulto',
+            edadMinima: 36,
+            edadMaxima: 55,
+            puntosCaracteristica: 10,
+            polaroids: 5,
+            puntosOnirica: 2
+        },
+        {
+            nombre: 'maduro',
+            edadMinima: 56,
+            edadMaxima: 200,
+            puntosCaracteristica: 9,
+            polaroids: 4,
+            puntosOnirica: 3
+        }
+    ]
+}
+/**
+ *
+ * @param {number} edad
+ */
+function getFranjaDeEdadPorEdad(edad) {
+
+}
